@@ -74,3 +74,9 @@ section img{
     opacity: 0;
     pointer-events: none;
 }
+
+/*Navigation Bar*/
+/*Logo*/
+.logo{
+    text-align: center
+}
