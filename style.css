@@ -7,10 +7,11 @@
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    text-decoration: none; /* prevent underlined text */
 }
 
 /* Default text sizes*/
-h1, h2 {
+h1{
     color: white;
     font-size: 2em;
     letter-spacing: 4px;
@@ -19,8 +20,7 @@ h1, h2 {
 /* Default page elements */
 body {
     background: #A8D0E6; /*Fall back color*/
-    background: linear-gradient(to bottom right, #1ec4e9, #24305E);
-    background: linear-gradient(to top, #1ec4e9 0%, #673ab7 50%);
+    background: linear-gradient(to bottom, #A8D0E6, #24305E);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -34,15 +34,19 @@ nav {
     padding: 30px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
 }
+/*Company Name logo*/
+.logo{
+    font-size: 3 em;
+}
+/*Buttons*/
 .button_bg{
     display: inline-flex;
-    background: linear-gradient(-30deg, #1ec4e9 0%, #673ab7 50%, #262626 50%, #607d8b 100%);
+    background: linear-gradient(to bottom, #1ec4e9 0%, #673ab7 50%, #262626 55%, #000 100%);
+    margin: 1%;
 }
-
 a{
     position: relative;
     padding: 20px 20px;
-    text-decoration: none; /*No underline for links*/
     color: white;
     font-size: 1em;
     text-transform: uppercase;
@@ -61,7 +65,6 @@ a:before{
     height: 100%;
     background: rgba(255, 255, 255, 0.1);
 }
-
 a:after{
     content: '';
     position: absolute;
@@ -71,13 +74,10 @@ a:after{
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
     transition: 0.5s;
-    transition-delay: 0.5s;
 }
-
 a:hover:after{
     left: 100%
 }
-
 a span{
     position: absolute;
     display: block;
@@ -127,27 +127,10 @@ a:hover span:nth-child(4){
     height: 100%;
     transform: translateY(-100%);
 }
-/*
-main {
-    background-color: #A8D0E6;
-    padding: 20px;
-    height: 100%;
+#cur_pg {
+    border: solid 4px white;
 }
-*/
-/*Navigation Bar: nav, buttons
-nav {
-    background-color: #374785;
-    padding: 20px;
-}
-button {
-    width: 15%;
-    padding: 15px;
-    margin: 25px 50px 75px 200px;
-    border: solid #24305E;
-    display: inline-block;
-}
-*/
-/*Logo*/
+
 
 /*Customize loading screen
 .preload{
