@@ -41,7 +41,7 @@ nav {
 /*Buttons*/
 .button_bg{
     display: inline-flex;
-    background: linear-gradient(to bottom, #1ec4e9 0%, #673ab7 50%, #262626 55%, #000 100%);
+    background: linear-gradient(to bottom, #1ec4e9 0%, #24305E 50%, #262626 55%, #000 100%);
     margin: 1%;
 }
 a{
@@ -212,7 +212,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #38d39f;
+	background-color: #1ec4e9;
 	transition: .4s;
 }
 
@@ -234,7 +234,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: #38d39f;
+	color: #1ec4e9;
 }
 
 .input-div > div > input{
@@ -265,7 +265,7 @@ form{
 }
 
 .forgot_pass:hover{
-	color: #38d39f;
+	color: #1ec4e9;
 }
 .btn{
 	display: block;
@@ -274,7 +274,7 @@ form{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-image: linear-gradient(to right, #24305E, #374785, #1ec4e9);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
