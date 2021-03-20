@@ -134,27 +134,22 @@ a:hover span:nth-child(4){
 
 
 /*form*/
-.wave{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	z-index: -1;
-}
-
-.container{
+.login-container{
     width: 100vw;
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 10%;
     grid-gap :7rem;
-    padding: 0 2rem;
 }
 
 .img{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+} /*img*/
+
+.img img{
+	width: 500px;
 }
 
 .login-content{
@@ -164,23 +159,12 @@ a:hover span:nth-child(4){
 	text-align: center;
 }
 
-.img img{
-	width: 500px;
-}
-
 form{
 	width: 360px;
 }
 
 .login-content img{
     height: 100px;
-}
-
-.login-content h2{
-	margin: 15px 0;
-	color: #333;
-	text-transform: uppercase;
-	font-size: 2.9rem;
 }
 
 .login-content .input-div{
