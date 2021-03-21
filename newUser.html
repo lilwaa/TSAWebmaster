@@ -10,10 +10,8 @@
         <!--CSS Link-->
         <link rel="stylesheet" type="text/css" href="style.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-
-        <title>Patient Portal</title>
+       
+        <title>Register</title>
     </head>
 
     <body>
@@ -42,7 +40,7 @@
                     </button></a>
                 </div>
 
-                <div class="button_bg" id="cur_pg">
+                <div class="button_bg">
                     <a href="patient_portal.html">
                         <span></span>
                         <span></span>
@@ -72,7 +70,7 @@
                     </button></a>
                 </div>
 
-                <div class="button_bg">
+                <div class="button_bg" id="cur_pg">
                     <a href="contact.html">
                         <span></span>
                         <span></span>
@@ -93,42 +91,53 @@
                 </div>
             </nav>
         </header>
-        
-        <div class="login-container">
-            <div class="img">
-                <img src="images/bg.svg"> <!--Update Image, color change-->
-            </div>
+        <!--heading-->
+        <h1 class = "intro">Student Information</h1>
 
-            <div class="login-content">
-                <form action="user.html"> <!--Send to? -->
-                        <img src="images/avatar.svg"> <!--Update Image, color change-->
-                        <h1>Login</h1>
-
-                    <div class="input-div one">
-                        <div class="i">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="div">
-                            <h5>Username</h5>
-                            <input type="text" class="input" required>
-                        </div>
-                    </div>
-
-                    
-                    <div class="input-div pass">
-                        <div class="i"> 
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <div class="div">
-                            <h5>Password</h5>
-                            <input type="password" class="input" required>
-                        </div>
-                    </div>
-                    <a href="newUser.html" class="forgot_pass">Register</a>
-                    <input type="submit" class="btn" value="Login">
-                </form>
-            </div>
+        <!--Input fields for: ID, first name, last name, grade, section, email, new/returning student-->
+        <div class="input-field col s6">
+            <input id="studentId" type="text" class="validate twhite" required>
+            <label for="studentId">Student ID</label>
         </div>
-        <script type="text/javascript" src="main.js"></script>
+        <div class="input-field col s6">
+            <input id="firstName" type="text" class="validate twhite" required>
+            <label for="firstName">First Name</label>
+        </div>
+        <div class="input-field col s6 twhite">
+            <input id="lastName" type="text" class="validate twhite" required>
+            <label for="lastName">Last Name</label>
+        </div>
+        <div class="input-field col s12 twhite">
+            <select id = "grade">
+            <option value=""disabled selected> Choose grade</option>
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+            </select>
+        </div>
+        <div class="input-field col s12">
+            <select id = "section">
+            <option value=""disabled selected> Choose section</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">None(not student yet)</option>
+            </select>
+        </div>
+  
+        <div class="input-field col s6 twhite">
+            <input id="email" type="email" class="validate twhite" required>
+            <label for="email">Email</label>
+        </div>
+    </div>
+    <div class="input-field col s12">
+        <select id = "type">
+        <option value=""disabled selected>Choose new or returning student</option>
+        <option value="new">New Student</option>
+        <option value="returning">Returning Student</option>
+        </select>
+    </div>
     </body>
 </html>
