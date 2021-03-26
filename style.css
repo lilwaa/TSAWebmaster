@@ -327,6 +327,11 @@ form{
 	}
 }
 
+/*New User page*/
+.register{
+    height: 100vh;
+}
+
 /*Customize loading screen
 .preload{
     position: fixed;
