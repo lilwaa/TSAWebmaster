@@ -7,7 +7,7 @@ h1 {
 }
 
 .infobox {
-    background-color: #E7E3D4;
+    background-color: #f1eddf;
     /*background-image: linear-gradient(#e0eeff, #e2ffff);*/
     padding: 30px;
     width: 75%;
@@ -36,7 +36,46 @@ p {
     font-weight: 300;
 }
 
+.subscribeText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color:white;
+}
+
 img {
     width: 50%;
     height: auto;
+}
+
+input[type=text] {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 5px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+.subscribeButton {
+    background-color: #4caf89; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+links {
+    position: relative !important;
+    padding: 20px 20px !important;
+    color: white !important;
+    font-size: 1em !important;
+    text-transform: uppercase !important;
+
+    letter-spacing: 4px !important;
+    overflow: hidden !important;
+    background: rgba(255, 255, 255, .1) !important;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2) !important;
 }
