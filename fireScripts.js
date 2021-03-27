@@ -13,35 +13,35 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 //Prepare Data
-var fName, lName, phone, dob, address, username, password, email, info
+var fName, lName//, phone, dob, address, username, password, email, info
 
 function dataPrep(){
     fName = document.getElementById('fName').value;
     lName = document.getElementById('lName').value;
-    phone = document.getElementById('phone').value;
-    dob = document.getElementById('dob').value;
-    address = document.getElementById('address').value;
-    username = document.getElementById('username').value;
+    //phone = document.getElementById('phone').value;
+    //dob = document.getElementById('dob').value;
+    //address = document.getElementById('address').value;
+    /*username = document.getElementById('username').value;
     password = document.getElementById('password').value;
     email = document.getElementById('email').value;
-    info = document.getElementById('textarea1').value;
+    info = document.getElementById('textarea1').value;*/
 }
 
 //Submit button
 document.getElementById('insert').onclick = function(){
-    
     dataPrep();
+
     //Create folder in FB, email as primary key
-    firebase.database().ref('user/' + email).set({
+    firebase.database().ref('user/'+fName).set({
         first_name: fName,
-        last_name: lName,
-        phone: phone,
-        date_birth: dob,
-        address: address,
-        username: username,
+        last_name: lName
+        //phone: phone,
+        //date_birth: dob,
+        //address: address,
+        /*username: username,
         password: password,
         email: email,
-        medical_info: info
+        medical_info: info*/
     });
 
     
