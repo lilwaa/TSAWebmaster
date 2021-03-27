@@ -325,6 +325,9 @@ form{
 .left{
     padding-top: 12px;
 }
+#move_d{
+    padding-top: 0.1em;
+}
 
 /*New User page*/
 #ret_home{
