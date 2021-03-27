@@ -39,27 +39,27 @@
             <div class="row">
               <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="fName" type="text" class="validate">
+                <input id="fName" type="text" class="validate" required>
                 <label for="fName">First Name</label>
               </div>
               <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="lName" type="text" class="validate">
+                <input id="lName" type="text" class="validate" required>
                 <label for="lName">Last Name</label>
               </div>
               <div class="input-field col s6">
                 <i class="material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" class="validate">
+                <input id="icon_telephone" type="tel" class="validate" required>
                 <label for="icon_telephone">Telephone</label>
               </div>
               <div class="input-field col s6">
                 <i class="material-icons prefix">date_range</i>
-                <input id="dob" type="text" class="validate">
+                <input id="dob" type="text" class="validate" required>
                 <label for="dob">Date of birth (mm/dd/yyyy)</label>
               </div>
               <div class="input-field col s12">
                 <i class="material-icons prefix">location_on</i>
-                <input id="location" type="text" class="validate">
+                <input id="location" type="text" class="validate" required>
                 <label for="location">Address (ex. 123 Pine Street, City, NJ 123456)</label>
               </div>
             </div>
@@ -67,18 +67,19 @@
             <div class="row">
               <div class="input-field col s6">
                 <i class="material-icons prefix">face</i>
-                <input id="username" type="text" class="validate">
+                <input id="username" type="text" class="validate" required>
                 <label for="username">Username</label>
               </div>
               <div class="input-field col s6">
                 <i class="material-icons prefix">vpn_key</i>
-                <input id="password" type="password" class="validate">
+                <input id="password" type="password" class="validate" required>
                 <label for="password">Password</label>
               </div>
               <div class="input-field col s12">
                 <i class="material-icons prefix">contact_mail</i>
-                <input id="email" type="email" class="validate">
+                <input id="email" type="email" class="validate" required>
                 <label for="email">Email</label>
+                <span class="helper-text" data-error="Please provide a valid email address"></span>
               </div>
             </div>
             <button class="btn waves-effect waves-light" type="submit" name="action">Submit

@@ -343,10 +343,25 @@ form{
 .row{
     min-height: 80%;
     background-color: white;
-    color: black;
     margin-top: 2em;
 }
-
+/* label color */
+.input-field label {
+    color: #24305E;
+  }
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #24305E;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #1ec4e9;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #1ec4e9;
+    box-shadow: 0 1px 0 0 #1ec4e9;
+}
 
 /*Customize loading screen
 .preload{
