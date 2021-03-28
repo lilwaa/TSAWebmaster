@@ -15,165 +15,130 @@
         <script src="materialize.js"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <title>Patient Portal</title>
+        <title>Portal</title>
     </head>
 
-    <body>
-        <!--Header Navigation bar-->
-        <header>
-            <!--
-            <nav>
-                <h1>COMPANY NAME</h1>
-                
-                <div class="button_bg">
-                    <a href="index.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Home
-                    </button></a>
-                </div>
-
-                <div class="button_bg">
-                    <a href="about.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        About
-                    </button></a>
-                </div>
-
-                <div class="button_bg" id="cur_pg">
-                    <a href="patient_portal.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Patient Portal
-                    </button></a>
-                </div>
-
-                <div class="button_bg">
-                    <a href="store.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Store
-                    </button></a>
-                </div>
-
-                <div class="button_bg">
-                    <a href="info.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        News/Information
-                    </button></a>
-                </div>
-
-                <div class="button_bg">
-                    <a href="contact.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Contact Us
-                    </button></a>
-                </div>
-                
-                <div class="button_bg">
-                    <a href="citations.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        citations
-                    </button></a>
-                </div>
-                
-            </nav>
-            -->
-        </header>
-        <div class="left">
-            <h3>Welcome! Please sign in with your username and password.</h3>
-            <h3 id="move_d"><i>For new users, please click here: </i></h3>
-            <div class="button_bg">
-                <a href="newUser.html">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    New User
-                </button></a>
-            </div>
+  <body>
+    <!--Header Navigation bar-->
+    <header>
+      <nav>
+        <h1>COMPANY NAME</h1>
+        
+        <div class="button_bg">
+            <a href="index.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Home
+            </button></a>
         </div>
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">face</i>
-                        <input id="username" type="text" class="validate" required>
-                        <label for="username">Username</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">vpn_key</i>
-                        <input id="password" type="password" class="validate" required>
-                        <label for="password">Password</label>
-                    </div>
-                </div>
-                
-                <a id="select1" class="btn waves-effect waves-light">Submit
-                    <i class="material-icons right">send</i>
-                </a>
+
+        <div class="button_bg">
+            <a href="about.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                About
+            </button></a>
+        </div>
+
+        <div class="button_bg" id="cur_pg">
+            <a href="patient_portal.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Patient Portal
+            </button></a>
+        </div>
+
+        <div class="button_bg">
+            <a href="store.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Store
+            </button></a>
+        </div>
+
+        <div class="button_bg">
+            <a href="info.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                News/Information
+            </button></a>
+        </div>
+
+        <div class="button_bg">
+            <a href="contact.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Contact Us
+            </button></a>
+        </div>
+        
+        <div class="button_bg">
+            <a href="citations.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Citations
+            </button></a>
+        </div> 
+      </nav>
+    </header>
+    <div class="space"></div>
+    <div class="left">
+      <h3>Welcome! Please sign in with your username and password.</h3>
+      <h3 id="move_d"><i>For new users, please click here: </i></h3>
+      <div class="button_bg">
+          <a href="newUser.html">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              New User
+          </button></a>
+      </div>
+  </div>
     
-            </form>
-           
-        </div>
+  <!--Input fields for: -->
+  <div class="login-container">
+    <div class="img">
+      <img src="images/bg.svg"> 
+    </div>
+    <div class="login-content">
+      <form class="col s12">
+        
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">face</i>
+            <input id="username" type="text" class="validate" required>
+            <label for="username">Username</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">vpn_key</i>
+            <input id="password" type="password" class="validate" required>
+            <label for="password">Password</label>
+          </div>
+          
+        
+        <a id="select1" class="btn waves-effect waves-light">Submit
+          <i class="material-icons right">send</i>
+        </a>
 
-     <!--   <div class="login-container">
-            <div class="img">
-                <img src="images/bg.svg"> 
-            </div>
-
-            <div class="login-content">
-
-                <form> 
-                        <img src="images/avatar.svg">
-                        <h1>Login</h1>
-
-                    <div class="input-div one">
-                        <div class="i">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="div">
-                            <h5>Username</h5>
-                            <input id="userVal" type="text" class="input" required>
-                        </div>
-                    </div>
-                    <div class="input-div pass">
-                        <div class="i"> 
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <div class="div">
-                            <h5>Password</h5>
-                            <input id="passVal" type="password" class="input" required>
-                        </div>
-                    </div>
-                
-                <a id="select" class="btn waves-effect waves-light">Submit
-                    <i class="material-icons right">send</i>
-                  </a>
-                </form>
-            </div>
-        </div>
-       
-        <script type="text/javascript" src="main.js"></script>
-         -->
-         <!--JavaScript & JQuery at end of body for optimized loading-->
+      </form>
+    </div>
+  </div>
+        <!--JavaScript & JQuery at end of body for optimized loading-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         
@@ -185,5 +150,6 @@
 
         <!-- Also need to include fireScripts.js custom JS file -->
         <script src="login.js"></script>
+
     </body>
 </html>
