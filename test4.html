@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Meta tags-->
+        <meta charset="utf-8">
+        <!--Optimization for mobile + web-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--CSS Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--Materialize Links-->
+        <script src="materialize.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <title>Register</title>
+    </head>
+
+   <body class="register">
+      <div class="reg_heading">
+        <div class="button_bg" id="ret_home">
+          <a href="index.html">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Home
+          </button></a>
+        </div>
+        <h1 class="heading_reg">Register</h1>
+      </div>
+      <div class="space"></div>
+        <!--Input fields for: -->
+        <div class="row">
+          <form class="col s12">
+            
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">face</i>
+                <input id="username" type="text" class="validate" required>
+                <label for="username">Username</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">vpn_key</i>
+                <input id="password" type="password" class="validate" required>
+                <label for="password">Password</label>
+              </div>
+              
+            
+            <a id="select1" class="btn waves-effect waves-light">Submit
+              <i class="material-icons right">send</i>
+            </a>
+
+          </form>
+       
+        </div>
+        <!--JavaScript & JQuery at end of body for optimized loading-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+
+        <!--Firebase Libraries - Make sure the version matches your Firebase SDK snippet 8.3.1-->
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+
+        <!-- Also need to include fireScripts.js custom JS file -->
+        <script src="login.js"></script>
+
+    </body>
+</html>

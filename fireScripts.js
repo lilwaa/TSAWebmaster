@@ -27,12 +27,14 @@ function dataPrep(){
     info = document.getElementById('textarea1').value;
 }
 
+
 //Submit button
 document.getElementById('insert').onclick = function(){
+
     dataPrep();
 
     //Create folder in FB, email as primary key
-    firebase.database().ref('id/'+ fName).set({
+    firebase.database().ref('id/'+username).set({
         first_name: fName,
         last_name: lName,
         phone: phone,
@@ -46,3 +48,24 @@ document.getElementById('insert').onclick = function(){
   
 }
 
+// Select Data
+document.getElementById('select1').onclick = function(){
+    window.open("index.html");
+    /*document.write("Sucess");
+    uName = document.getElementById("userVal").value;
+    passwd = document.getElementById("passVal").value;
+   
+    document.write(uName);
+
+    firebase.database().ref('id/'+uName).on('value', function(snapshot){
+        temp_password = snapshot.val().password
+    })
+
+    if(passwd.localeCompare(temp_password) == 0){
+        window.open("index.html");
+    }
+    else{
+        window.open("info.html")
+    }*/
+
+}
