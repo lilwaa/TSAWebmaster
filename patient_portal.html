@@ -9,7 +9,7 @@
 
         <!--CSS Link-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="portal.css">
 
         <!--Materialize Links-->
         <script src="materialize.js"></script>
@@ -22,7 +22,7 @@
     <!--Header Navigation bar-->
     <header>
       <nav>
-        <h1>COMPANY NAME</h1>
+        <h1><b>COMPANY NAME</b></h1>
         
         <div class="button_bg">
             <a href="index.html">
@@ -95,48 +95,52 @@
         </div> 
       </nav>
     </header>
-    <div class="space"></div>
-    <div class="left">
-      <h3>Welcome! Please sign in with your username and password.</h3>
-      <h3 id="move_d"><i>For new users, please click here: </i></h3>
-      <div class="button_bg">
-          <a href="newUser.html">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              New User
-          </button></a>
+    <div class="login-container">
+      <div class="img">
+        <h1 class= "left_align">Patient Portal</h1>
+        <img src="images/bg.svg"> 
       </div>
-  </div>
+      <div class="left">
+        
+        <h3>Welcome! Please sign in with your username and password.</h3>
+        <h3 id="move_d"><i>For new users, please click here: </i></h3>
+        <div class="button_bg">
+            <a class="center" href="newUser.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                New User
+            </button></a>
+        </div>
+        <div class="login-content">
+          <form class="col s12">
+            <div class="space"></div>
+            <div class="login-title">
+              <h1>Login</h1>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">face</i>
+                <input id="username" type="text" class="validate" required>
+                <label for="username">Username</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">vpn_key</i>
+                <input id="password" type="password" class="validate" required>
+                <label for="password">Password</label>
+              </div>
+              
+            
+            <a id="select1" class="btn waves-effect waves-light">Submit
+              <i class="material-icons right">send</i>
+            </a>
     
-  <!--Input fields for: -->
-  <div class="login-container">
-    <div class="img">
-      <img src="images/bg.svg"> 
-    </div>
-    <div class="login-content">
-      <form class="col s12">
-        
-        <div class="row">
-          <div class="input-field col s6">
-            <i class="material-icons prefix">face</i>
-            <input id="username" type="text" class="validate" required>
-            <label for="username">Username</label>
-          </div>
-          <div class="input-field col s6">
-            <i class="material-icons prefix">vpn_key</i>
-            <input id="password" type="password" class="validate" required>
-            <label for="password">Password</label>
-          </div>
-          
-        
-        <a id="select1" class="btn waves-effect waves-light">Submit
-          <i class="material-icons right">send</i>
-        </a>
-
-      </form>
-    </div>
+          </form>
+        </div>
+      </div>
+    
+    
   </div>
         <!--JavaScript & JQuery at end of body for optimized loading-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
