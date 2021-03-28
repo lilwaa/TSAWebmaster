@@ -24,9 +24,8 @@ document.getElementById('select1').onclick = function(){
             window.open("user.html");
         }
         else{
-            window.open("info.html");
+            window.alert("User does not exist. If you are a new user, please register.")
         }
     })
-    //window.open("index.html")
     
 }
