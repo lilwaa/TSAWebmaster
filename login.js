@@ -12,6 +12,7 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+  
 document.getElementById('select1').onclick = function(){
 
     uName = document.getElementById("username").value;

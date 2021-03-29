@@ -13,7 +13,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
 //Prepare Data
-var fName, lName, phone, dob, address, username, password, email, info
+var fName, lName, phone, dob, address, username, password, email, gender, height, weight, info
 
 function dataPrep(){
     fName = document.getElementById('fName').value;
@@ -24,13 +24,16 @@ function dataPrep(){
     username = document.getElementById('username').value;
     password = document.getElementById('password').value;
     email = document.getElementById('email').value;
+    gender = document.getElementById('gender').value;
+    height = document.getElementById('height').value;
+    weight = document.getElementById('weight').value;
     info = document.getElementById('textarea1').value;
 }
 
 
 //Submit button
 document.getElementById('insert').onclick = function(){
-
+    
     dataPrep();
 
     //Create folder in FB, email as primary key
@@ -43,29 +46,11 @@ document.getElementById('insert').onclick = function(){
         username: username,
         password: password,
         email: email,
+        gender: gender,
+        height: height,
+        weight: weight,
         medical_info: info
     });
   
 }
 
-// Select Data
-document.getElementById('select1').onclick = function(){
-    window.open("index.html");
-    /*document.write("Sucess");
-    uName = document.getElementById("userVal").value;
-    passwd = document.getElementById("passVal").value;
-   
-    document.write(uName);
-
-    firebase.database().ref('id/'+uName).on('value', function(snapshot){
-        temp_password = snapshot.val().password
-    })
-
-    if(passwd.localeCompare(temp_password) == 0){
-        window.open("index.html");
-    }
-    else{
-        window.open("info.html")
-    }*/
-
-}
