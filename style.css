@@ -470,19 +470,23 @@ ul{
 }
 li{
     margin: 20px 0px;
+    letter-spacing: 3px;
 
 }
 
 .centernav{
     grid-column: 2;
     grid-row: 1;
+
 }
 .rightnav{
     grid-column: 3;
     grid-row: 1;
+
 }
 .blackText{
     color: black;
+    letter-spacing: 3px;
 }
 
 /*Customize loading screen
