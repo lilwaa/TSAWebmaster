@@ -1,0 +1,140 @@
+/*add*/
+body{
+    background-image: url("images/city.jpg"), linear-gradient( #A8D0E6, #24305E);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    background-blend-mode: none; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 100px;
+}
+
+.padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.stay{
+    width: 33%;
+    position: fixed;
+    bottom:0px;
+    right:0px;
+}
+
+
+
+
+.border {
+    border: dashed 0.05em white;
+}
+.grid-scroll{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+}
+
+
+h1 {
+    color: white;
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.infobox {
+    padding: 30px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    line-height: 1.5;
+
+    /*add*/
+    background-color: rgba(255, 255, 255, .8)
+}
+
+.date {
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+h2 {
+    /*font-size: 2em;
+    letter-spacing: 1px;
+    */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.subscribeText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color:white;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+input[type=text] {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 5px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+.subscribeButton {
+    background-color: #4caf89; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+links {
+    position: relative !important;
+    padding: 20px 20px !important;
+    color: white !important;
+    font-size: 1em !important;
+    text-transform: uppercase !important;
+
+    letter-spacing: 4px !important;
+    overflow: hidden !important;
+    background: rgba(255, 255, 255, .1) !important;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2) !important;
+}
