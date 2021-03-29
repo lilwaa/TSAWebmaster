@@ -42,6 +42,12 @@ nav {
 .logo{
     font-size: 3 em;
 }
+.logo-image{
+    height: 300px;
+    margin: 50px;
+    border: solid 0.2em black;
+    background: linear-gradient(to right top, black 0%, #24305E 30%, #A8D0E6 80%);
+}
 /*Buttons*/
 .button_bg{
     display: inline-flex;
