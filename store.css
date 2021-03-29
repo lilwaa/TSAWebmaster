@@ -20,6 +20,7 @@
 }
 .name{
     color: white;
+    font-size: 1.2em;
     padding-bottom: 50px;
 }
 
@@ -231,12 +232,17 @@ a:hover span:nth-child(4){
     font-size: 18px;
   }
   
+.desc p {
+    padding: 2px 10px 10px 10px;
+}
+
   .card button:hover {
     opacity: 0.7;
   }
 .price {
-    color: white;
-    font-size: 22px;
+    color: rgb(223, 223, 223);
+    font-size: 18px;
+    padding-bottom: 10px;
   }
 
 /*index*/
