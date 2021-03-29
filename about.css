@@ -36,10 +36,10 @@ body{
 
 }
 .fixed{
-    position: fixed;
-    width: 33%;
-    right: 0px;
-    top: 250px;
+    position:fixed;
+    width:33%;
+    right:0px;
+    top:250px;
 }
 
 .item1 { 
