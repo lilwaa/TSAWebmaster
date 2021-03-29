@@ -20,6 +20,10 @@ h1{
 p{
     color: white;
 }
+
+#dateVal, #heightVal, #weightVal{
+    color: black;
+}
 h2{
     color: black;
     font-size: 1em;
@@ -190,8 +194,6 @@ a:hover span:nth-child(4){
     50%  { background-position: right; }
     100% { background-position: right; }
 }
-
-
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
