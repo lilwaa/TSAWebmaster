@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS Link-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="store.css">
 
     <title>Store</title>
 </head>
@@ -91,63 +91,159 @@
             </div>
         </nav>
     </header>
-    <div class="wrapper">
-        <div class="card">
-            <img src="images\tempSensor.jpg" alt="Temperature Sensor" style="width:100%">
-            <h1>Touchless Temperature Sensor</h1>
-            <p class="price">$19.99</p>
-            <p>A touchless temperature sensor is essential to any in-person business
-                that is accepting customers.
-            </p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card">
-            <img src="images\masks.jpg" alt="Face masks" style="width:100%">
-            <h1>Face Masks</h1>
-            <p class="price">$64.99</p>
-            <p>General Use Face Masks, 600
-            </p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card">
-            <img src="images\coughDrop.jpg" alt="Cough Drops" style="width:100%">
-            <h1>Cough Drops</h1>
-            <p class="price">$2.99</p>
-            <p>Cough drops will help with COVID symptoms, specifically coughing.
-            </p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card">
-            <img src="images\tylenol.jpg" alt="Tylenol" style="width:100%">
-            <h1>Tylenol</h1>
-            <p class="price">$8.99</p>
-            <p>Tylenol can reduce fevers, aches, and pains.
-            </p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card">
-            <img src="images\claritin.jpg" alt="Claritin" style="width:100%">
-            <h1>Claritin</h1>
-            <p class="price">$9.99</p>
-            <p>Claritin is an antihistamine which can reduce stuffiness and congestion.
-            </p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card">
-            <img src="images\glutathione.jpg" alt="Tylenol" style="width:100%">
-            <h1>Glutathione</h1>
-            <p class="price">$19.99</p>
-            <p> Glutathione is an antioxidant that helps strengthen the immune system, which will help with COVID.
-            </p>
-            <p><button>Add to Cart</button></p>
+    <div class="cart">
+        <h2>My Cart: </h2>
+   
+        <div id="cart">
+
         </div>
     </div>
+    <div class="wrapper">
+        <div class="card">
+            <div class="card-image temp">
+                <img src="images/infraredthermometer.png" alt="Temperature Sensor">
+            </div>
+            <div class="desc temp">
+                <span class="name"><b>Infrared Temperature Sensor</b></span>
+                <p class="price">$19.99</p>
+                <p>A touchless temperature sensor is essential to any in-person business.
+                </p>
+               
+            </div>
+            <div class="store-btn">
+                <button onclick="tempFunction()">Add to Cart</button>
+            </div>   
+        </div>
 
+        <div class="card">  
+            <div class="card-image masks">
+                <img src="images/masks.png" alt="Face masks">
+            </div>
+            <div class="desc temp">
+                <span class="name">Face Masks</span>
+                <p class="price">$24.99</p>
+                <p>General Use Face Masks, x50 per box</p>
+                
+            </div>
+            <div class="store-btn">
+                <button onclick="maskFunction()">Add to Cart</button>
+            </div>   
+        </div>
 
+        <div class="card">  
+            <div class="card-image vitC">
+                <img src="images/vitaminC.png" alt="Vitamin C">
+            </div>
+            <div class="desc temp">
+                <span class="name">Vitamin C</h1>
+                    <p class="price">$5.99</p>
+                <p>Vitamin C helps boost the immune system.
+                </p>
+                
+            
+            </div>
+            <div class="store-btn">
+                <button onclick="vitCFunction()">Add to Cart</button>
+            </div>   
+        </div>
 
+        <div class="card">  
+            <div class="card-image vitC">
+                <img src="images/motrin.png" alt="Motrin">
+            </div>
+            <div class="desc motrin">
+                <span class="name">Motrin</h1>
+                <p class="price">$2.99</p>
+                <p>Motrin can reduce fevers, aches, and pains.
+                    </p>
+            </div>
+            <div class="store-btn">
+                <button onclick="motrinFunction()">Add to Cart</button>
+            </div>   
+        </div>
 
+        <div class="card">
+            <div class="card-image vitC">
+                <img src="images/claritin.png" alt="Claritin">
+            </div>
+            <div class="desc motrin">
+                <span class="name">Claritin</h1>
+                <p class="price">$9.99</p>
+                <p>Claritin is an antihistamine which can reduce stuffiness and congestion.
+                </p>
+            
+            </div>
+            <div class="store-btn">
+                <button onclick="claritinFunction()">Add to Cart</button>
+            </div>  
+        </div>
 
+        <div class="card">
+            <div class="card-image vitC">
+                <img src="images/coldeeze.png" alt="Coldeeze">
+            </div>
+            <div class="desc motrin">
+                <span class="name">ColdEeze</h1>
+                <p class="price">$9.99</p>
+                <p>Coldeeze contains Zinc to help with colds.
+                </p>
+            
+            </div>
+            <div class="store-btn">
+                <button onclick="coldEezeFunction()">Add to Cart</button>
+            </div>  
+        </div>
 
+        <div class="card">
+            <div class="card-image">
+                <img src="images/antibacterial.png" alt="Wipes">
+            </div>
+            <div class="desc motrin">
+                <span class="name">WetOnes Wipes</h1>
+                <p class="price">$9.99</p>
+                <p>Wipes to help...
+                </p>
+            
+            </div>
+            <div class="store-btn">
+                <button onclick="wipesFunction()">Add to Cart</button>
+            </div>  
+        </div>
+
+        <div class="card">
+            <div class="card-image vitC">
+                <img src="images/emergenC.png" alt="EmergenC">
+            </div>
+            <div class="desc motrin">
+                <span class="name">EmergenC</h1>
+                <p class="price">$9.99</p>
+                <p>Vitamin C
+                </p>
+            
+            </div>
+            <div class="store-btn">
+                <button onclick= "EmergenCFunction()">Add to Cart</button>
+            </div>  
+        </div>
+
+        <div class="card">
+            <div class="card-image vitC">
+                <img src="images/soap.png" alt="Wipes">
+            </div>
+            <div class="desc motrin">
+                <span class="name">Antibacterial Soap</h1>
+                <p class="price">$9.99</p>
+                <p>Soap
+                </p>
+            
+            </div>
+            <div class="store-btn">
+                <button onclick="soapFunction()">Add to Cart</button>
+            </div>  
+        </div>
+
+    </div>
+    <script src="store.js"></script>
 </body>
 
 </html>
