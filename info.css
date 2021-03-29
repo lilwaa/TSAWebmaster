@@ -24,9 +24,8 @@ h1 {
 }
 
 h2 {
-    /*font-size: 2em;
+    font-size: 1.4em;
     letter-spacing: 1px;
-    */
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
@@ -34,6 +33,7 @@ h2 {
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    color:rgb(0, 0, 0);
 }
 
 .subscribeText {
@@ -78,4 +78,26 @@ links {
     overflow: hidden !important;
     background: rgba(255, 255, 255, .1) !important;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .2) !important;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+/* Padding to show title */
+.sticky + .content {
+    padding-top: 190px;
+}
+
+button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: #0000EE;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+    font-weight: 300;
+    font-size:16px;
+    cursor:pointer;
 }
