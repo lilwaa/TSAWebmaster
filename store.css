@@ -17,6 +17,7 @@
     border: solid 0.1em #24305E;
     padding: 0px;
     margin: 0px;
+    margin-bottom: 10px;
 }
 .name{
     color: white;
@@ -29,6 +30,7 @@
     background-color:#A8D0E6;
     min-height: 100px;
     color: black;
+    margin-bottom: 20px;
 }
 
 
@@ -257,6 +259,10 @@ a:hover span:nth-child(4){
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap :7rem;
+}
+
+img {
+    border-radius: 1%;
 }
 
 .img{
