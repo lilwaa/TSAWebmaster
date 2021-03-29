@@ -17,7 +17,7 @@
 
 <body>
     <!--Header Navigation bar-->
-    <header id="myHeader">
+    <header class="sticky">
         <nav>
             <h1>COMPANY NAME</h1>
 
@@ -82,52 +82,39 @@
             </div>
         </nav>
     </header>
-    <h1 class="border">Telecommunication: The Future of Healthcare</h1>
+    <div class="content">
+        <h1 class="border">Telecommunication: The Future of Healthcare</h1>
+        <!--
+        <div class="fixed">
+            <div class="infobox">
+                <p>
+                    CONTACT INFORMATION: In order to contact us, please register using the patient portal. Our phone number is: 832-593-4456 In the case of an emergency, seek first aid immediately.
+                </p>
+            </div>
+        </div>
+        -->
+        <div class="grid-container">
+            <div class="item1">
+                <img src="images/logo.png">
+            </div>
+            <div class="about1">
+                <div class="infobox"><p><b>ABOUT US:</b><br />COMPANY NAME strives to innovate Telecommunication with interactive web and video calls along with help from our professionally trained doctors.</p></div>
+            </div>
+            <div class="item2">
+                <img src="images/nasa-Q1p7bh3SHj8-unsplash.jpg">
+            </div>
+            <div class="about2">
+                <div class="infobox"><p><b>CONTACT US:</b><br />Our Phone Number:<br />832-593-4456<br/>Make sure to sign up to the patient portal to get involved!</p></div>
+            </div>
+            <div class="item3">
+                <img src="images/pexels-anna-shvets-4225920.jpg">
+            </div>
+            <div class="about3">
+                <div class="infobox"><p><b>STORE INFORMATION:</b><br />Here at, COMPANY NAME we also sell commonly used appliances to help our customers stay safe. No refunds will be provided so make sure to only order what you need!</p></div>
+            </div>
 
-    <div class="fixed">
-        <div class="infobox">
-            <p>
-                CONTACT INFORMATION: In order to contact us, please register using the patient portal. Our phone number is: 832-593-4456 In the case of an emergency, seek first aid immediately.
-            </p>
         </div>
     </div>
-    <div class="grid-container">
-        <div class="item1">
-            <img src="images/logo.png">
-        </div>
-        <div class="item2">
-            <img src="images/nasa-Q1p7bh3SHj8-unsplash.jpg">
-        </div>
-        <div class="item3">
-            <img src="images/pexels-anna-shvets-4225920.jpg">
-        </div>
-
-    </div>
-
-
-
-
-    <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        // Get the header
-        var header = document.getElementById("myHeader");
-
-        // Get the offset position of the navbar
-        var sticky = header.offsetTop;
-
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-    </script>
 </body>
 
 </html>
