@@ -9,8 +9,19 @@ var firebaseConfig = {
     appId: "1:277914498918:web:e34709343f2683884c3aa7"
     };
 
+var firebaseConfig2 = {
+    apiKey: "AIzaSyBSk-jIkc7Xjk-K8TNKzhpRqakpMZ5prrs",
+    authDomain: "wearablesensor-36b85.firebaseapp.com",
+    databaseURL: "https://wearablesensor-36b85-default-rtdb.firebaseio.com",
+    projectId: "wearablesensor-36b85",
+    storageBucket: "wearablesensor-36b85.appspot.com",
+    messagingSenderId: "1008471952867",
+    appId: "1:1008471952867:web:229e59e9d14eab489024d6",
+    measurementId: "G-6PH3P75TQ2"
+    };
+
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig2);
 
 //Prepare Data
 var uName, height, weight, tDate
