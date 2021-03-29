@@ -456,6 +456,35 @@ form{
     box-shadow: 0 1px 0 0 #1ec4e9;
 }
 
+/*index page grid*/
+.navgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.leftnav{
+    grid-column: 1;
+    grid-row: 1;
+}
+ul{
+    list-style-type: circle;
+}
+li{
+    margin: 20px 0px;
+
+}
+
+.centernav{
+    grid-column: 2;
+    grid-row: 1;
+}
+.rightnav{
+    grid-column: 3;
+    grid-row: 1;
+}
+.blackText{
+    color: black;
+}
+
 /*Customize loading screen
 .preload{
     position: fixed;
