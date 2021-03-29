@@ -1,10 +1,10 @@
 /*add*/
 body{
-    background-image: url("images/city.jpg"), linear-gradient( #A8D0E6, #24305E);
+    background-image: url("images/marc-olivier-jodoin-unsplash.jpg"), linear-gradient( #A8D0E6, #24305E);
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
-    background-blend-mode: none; 
+    background-blend-mode: darken; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
