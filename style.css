@@ -224,7 +224,7 @@ a:hover span:nth-child(4){
 
 /*index*/
 .main{
-    height: 100vh;
+    height: 80vh;
 }
 
 
@@ -464,6 +464,10 @@ form{
     margin-right: 170px;
 }
 .leftnav{
+    background-image: linear-gradient(#f4f9ff, #e2ffff);
+    padding: 30px;
+    height: 100%;
+    border-radius: 4px;
     grid-column: 1;
     grid-row: 1;
 }
@@ -482,6 +486,11 @@ li{
 
 }
 .rightnav{
+    background-image: linear-gradient(#fffcf4, #fff3e2);
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    border-radius: 4px;
     grid-column: 3;
     grid-row: 1;
 

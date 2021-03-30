@@ -87,7 +87,7 @@ links {
 
 /* Padding to show title */
 .sticky + .content {
-    padding-top: 12%;
+    padding-top: 25vh;
 }
 
 button {
