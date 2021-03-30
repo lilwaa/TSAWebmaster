@@ -5,7 +5,8 @@
     <script>
         (function(d,h,w){var gist=w.gist=w.gist||[];gist.methods=['trackPageView','identify','track','setAppId'];gist.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);gist.push(e);return gist;}};for(var i=0;i<gist.methods.length;i++){var c=gist.methods[i];gist[c]=gist.factory(c)}s=d.createElement('script'),s.src="https://widget.getgist.com",s.async=!0,e=d.getElementsByTagName(h)[0],e.appendChild(s),s.addEventListener('load',function(e){},!1),gist.setAppId("6whihsaj"),gist.trackPageView()})(document,'head',window);
     </script>   
-     
+    
+    
     <head>
         <!--Meta tags-->
         <meta charset="utf-8">
@@ -13,22 +14,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--CSS Link-->
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="user.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <!--Import materialize.css via CDN link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--This template provides the boilerplate required to start a project with MaterializeCSS
+            -->
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css via CDN link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--If you import more than 1 cSS file, be aware that the styles are applied in the order they are linked-->
+        <!--Let browser know website is optimized for mobile-->
+
+        <!--HTML requirements-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+        <!--Import Google Icon Font-->
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
 
         <title>Home</title>
     </head>
 
     <body class="body">
-        <!--Customized loading screen, commented out until we have logo-->
-
-        <!--
-        <div class="preload">
-            <img class="airplane" src="./images/nurse.jpg" alt="nurse">
-            <h3>Loading the website...</h3>
-            <img class="tree1" src="./images/tree.png" alt="tree1">
-            <img class="tree2" src="./images/tree.png" alt="tree2">
-            <img class="tree3" src="./images/tree.png" alt="tree3">
-        </div>
-        -->
         <!--Header Navigation bar-->
         <header>
             <nav>
@@ -96,22 +110,368 @@
                 </div>
             </nav>
         </header>
+        <h1 class="user-welcome">Hello there!</h1>
+        <div>
+            <h2 class="user-welcome">Here you can: 
+                <br>
+                (1) <i>Schedule an appointment:</i> Just click on a colored button (not black), representing an empty slot.
+                <br>
+                (2) <i>Track your stats:</i> This page allows you to enter your weight/height as needed (our doctors will have access)
+                <br>
+                (3) <i>Meet the doctors: </i>Learn more about our Doctors
+                <br>
+                (4) <i>Have a live-chat: </i> If you have any remaining questions/concerns, send them in the chat. Our doctors will reply as soon as they have a chance. 
+            </h2>
+        </div>
 
         <!--Page Navigation-->
         <main class="main">
-            <br />
-            <h1 class="title">Welcome to ----!</h1>
-            <div>
-                <img class="logo-image" src="images/logo.png" alt="Logo">
+           <!--Calendar-->
+           
+           <div id="confirm"></div>
+           <div class="calendar">
+            <div class="month">
+                <ul>
+                  <li class="prev">&#10094;</li>
+                  <li class="next">&#10095;</li>
+                  <li>April<br><span style="font-size:18px">2021</span></li>
+                </ul>
             </div>
+              
+              <ul class="weekdays">
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thur</li>
+                <li>Fri</li>
+                <li>Sat</li>
+                <li>Sun</li>
+              </ul>
+              
+              <ul class="days">
+                <li>1
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>2
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>3
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>4
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Szava-Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>5
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>6
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>7
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>8
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>9
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>10
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>11
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>12
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>13
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>14
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>15
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>16
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>17
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>18
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>19
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>20
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>21
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>22
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>23
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>24
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>25
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>26
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>27
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>28
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>29
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>30
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li>31
+                    <button class="doctor1" title="8am-10am" onclick= "doctorOne()" id="booked">Kovats</button>
+                    <button class="doctor2" title="10am-12pm" onclick= "doctorTwo()" id="booked">Fauci</button>
+                    <button class="doctor3" title="2pm-4pm" onclick= "doctorThree()" id="booked">Chu</button>
+                    <button class="doctor4" title="4pm-6pm" onclick= "doctorFour()" id="booked">Larson</button>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+               </ul>
+           </div>
+
+           <div>
+                <div class="user-space">
+                    <!-- Link to statistics -->
+                    <button onclick="document.location.href='stats.html'" class="user-btn">Track your statistics</button>
+   
+                </div>
+           </div>
+       
+         
+           
+           <div class="containerss"> <!--Collaspisble to give quick summaries of each subpage-->
+            <div class="container2"> 
+                <br>
+                <h3 id = "click">Our 4 Doctors and Their Information</h3>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header" id="ch1">
+                            <i class="material-icons">accessibility</i> <b>Dr Michael Szava-Kovats, emergency medicine physician    </b><i class="material-icons">accessibility</i>
+                        </div>
+                        <div class="collapsible-body" id="c1">
+                            <span>Five weeks ago, Dr Erin Bruce, an anesthesiologist, and her husband, Dr Michael Szava-Kovats, had their first child, a daughter. He agonizes over the thought of exposing his young daughter and wife to infection. He accepts that he may get coronavirus. The risks to his family are outside his comfort zone, he says. He hopes to help others identify the virus early on so that it will not negatively effect others.</span>
+                            <br>
+                            <span> <b> Hours: </b> 8:00 A.M. - 10:00 A.M. </span>
+                            <br>
+                            <span> <b> Email: </b> szava-kovats@gmail.com </span>
+                            <br> 
+                            <span> <b> Phone Number: </b> 232-124-6233 </span>
+                            <br> 
+                            <span> <b> Registration: </b> Register by choosing the RED square on the preferred date.</span>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="ch2">
+                            <i class="material-icons">accessibility</i> <b> Dr. Anthony Fauci, American immunologist    </b><i class="material-icons">accessibility</i>
+                        </div>
+                        <div class="collapsible-body" id="c2">
+                            <span>Anthony Stephen Fauci is an American physician-scientist and immunologist who serves as the director of the U.S. National Institute of Allergy and Infectious Diseases and the chief medical advisor to the president.</span>
+                            <br>
+                            <span> <b> Hours: </b> 10:00 A.M.- 12:00 P.M. </span>
+                            <br>
+                            <span> <b> Email: </b> fauci@gmail.com </span>
+                            <br> 
+                            <span> <b> Phone Number: </b> 917-656-2341 </span>
+                            <br> 
+                            <span> <b> Registration: </b> Register by choosing the YELLOW square on the preferred date.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="ch3">
+                            <i class="material-icons">accessibility</i> <b>Dr Alan Chu, trauma surgeon    </b><i class="material-icons">accessibility</i>
+                        </div>
+                        <div class="collapsible-body" id="c3">
+                            <span>Chu is leading online training for residents about coronavirus and airway management, but is readying for a crush of sick patients to arrive in the ICU. She is not only adjusting to the digital world and doing her best to help, but also remaining a positive force in the emergency room as well. </span>
+                            <br>
+                            <span> <b> Hours: </b> 2:00 P.M. - 4:00 P.M. </span>
+                            <br>
+                            <span> <b> Email: </b> chu@gmail.com </span>
+                            <br> 
+                            <span> <b> Phone Number: </b> 732-978-8121 </span>
+                            <br> 
+                            <span> <b> Registration: </b> Register by choosing the GREEN square on the preferred date.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" id="ch4">
+                            <i class="material-icons">accessibility</i> <b>Dr Bonnie Larson, family medicine physician    </b><i class="material-icons">accessibility</i>
+                        </div>
+                        <div class="collapsible-body" id="c4">
+                            <span>Larson is a frontline physician working with the city’s homeless. She’s working to keep Covid-19 out of local shelters. She is dedicated to helping those who are less fortunate.</span>
+                            <br>
+                            <span> <b> Hours: </b> 4:00 P.M. - 6:00 P.M. </span>
+                            <br> 
+                            <span> <b> Email: </b> larson@gmail.com </span>
+                            <br> 
+                            <span> <b> Phone Number: </b> 732-713-7232 </span>
+                            <br> 
+                            <span> <b> Registration: </b> Register by choosing the BLUE square on the preferred date.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+           
+            <!--Chat Function-->
+            <div class="chat-popup" id="myForm1">
+                <form action="/action_page.php" class="form-container">
+                  <h1 id="chatt">Chat</h1>
+              
+                  <label for="msg"><b>Message</b></label>
+                  <textarea placeholder="Type message.." name="msg" required></textarea>
+              
+                  <button type="button" class="btn cancel" onclick="closeForm()">Send</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+
+
+            
+
+
+
+
         </main>
+
+        <!--JavaScript & JQuery at end of body for optimized loading-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         
-      
-        
-     
-        <script src="./app.js"></script>
+        <script src="user.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+                <!--JavaScript & JQuery at end of body for optimized loading-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="javascript/materialize.js"></script>
+
+    
+
+        <!--Materialize requirements for collapsible-->
+        <script>
+            $(document).ready(function () {
+                $('.collapsible').collapsible();
+            });
+        </script>
+    
+
     </body>
 </html>
+
+

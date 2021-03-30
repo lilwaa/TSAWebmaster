@@ -44,8 +44,9 @@ nav {
     padding: 30px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
     margin: 0px;
-    min-height: 200px; /*Does not work if browser resizes*/
+    min-height: 200px; 
 }
+
 /*Company Name logo*/
 .logo{
     font-size: 3 em;

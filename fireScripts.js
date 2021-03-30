@@ -22,7 +22,7 @@ var firebaseConfig2 = {
 
 
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig2);
+  firebase.initializeApp(firebaseConfig);
 
 //Prepare Data
 var fName, lName, phone, dob, address, username, password, email, gender, height, weight, info

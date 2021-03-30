@@ -21,7 +21,7 @@ var firebaseConfig2 = {
     };
 
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig2);
+    firebase.initializeApp(firebaseConfig);
 
 //Prepare Data
 var uName, height, weight, tDate

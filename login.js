@@ -21,7 +21,7 @@ var firebaseConfig2 = {
     };
 
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig2);
+  firebase.initializeApp(firebaseConfig);
 
   
 document.getElementById('select1').onclick = function(){
